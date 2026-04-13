@@ -10,7 +10,6 @@ import {
   TableRow,
 } from "@/components/ui/table";
 
-// Tipagem baseada no retorno da DummyJSON
 interface Product {
   id: number;
   title: string;
@@ -24,7 +23,6 @@ interface DummyResponse {
 }
 
 export default async function ProdutosPage() {
-  // 1. Consumindo o endpoint "Get all products"
   const response = await fetch("https://dummyjson.com/products?limit=10");
   const data: DummyResponse = await response.json();
   const products = data.products;
@@ -61,10 +59,11 @@ export default async function ProdutosPage() {
                 <TableCell className="capitalize">{product.category}</TableCell>
                 <TableCell className="text-right">${product.price.toFixed(2)}</TableCell>
                 <TableCell className="text-center">
-                  {/* Botão que usaremos para o Passo de Update futuramente */}
-                  <Button variant="ghost" size="sm">
+                <Button variant="ghost" size="sm" asChild>
+                <Link href={`/produtos/${product.id}`}>
                     Editar
-                  </Button>
+                </Link>
+                </Button>
                 </TableCell>
               </TableRow>
             ))}

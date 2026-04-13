@@ -8,8 +8,8 @@
 
 ## Checklist
 - [X] 1. Fork desse repositório
-- [ ] 2. Colocar o nome nesse arquivo `README.md`
-- [ ] 3. Criar um projeto next
+- [X] 2. Colocar o nome nesse arquivo `README.md`
+- [X] 3. Criar um projeto next
 - [ ] 4. Adicionar a lib [shadcnui](https://ui.shadcn.com/)
 - [ ] 5. Commit com mensagem "criado e configurado app inicial"
 - [ ] 6. Criar uma página inicial com link para a lista de produtos `/produtos` consumindo dados de https://dummyjson.com/docs/products

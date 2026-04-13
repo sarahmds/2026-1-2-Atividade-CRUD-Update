@@ -7,7 +7,7 @@
 - **Aluno**: FIXME
 
 ## Checklist
-- [ ] 1. Fork desse repositório
+- [X] 1. Fork desse repositório
 - [ ] 2. Colocar o nome nesse arquivo `README.md`
 - [ ] 3. Criar um projeto next
 - [ ] 4. Adicionar a lib [shadcnui](https://ui.shadcn.com/)

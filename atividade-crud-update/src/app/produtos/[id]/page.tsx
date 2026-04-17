@@ -51,7 +51,7 @@ export default function EditarProduto() {
       
       alert("Produto atualizado com sucesso!");
       router.push("/produtos");
-      router.refresh(); // Força a atualização dos dados na lista
+      router.refresh(); 
     } catch (error) {
       console.error("Erro ao atualizar:", error);
     }
